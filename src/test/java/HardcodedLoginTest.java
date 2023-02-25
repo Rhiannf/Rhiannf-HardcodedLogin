@@ -14,7 +14,7 @@ public class HardcodedLoginTest {
     public void loginTest1(){
         String user = "admin";
         String password = "qwerty";
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = hl.login(user,password);
         Assert.assertEquals(expected, actual);
     }
@@ -51,7 +51,7 @@ public class HardcodedLoginTest {
     public void loginTest4(){
         String user = "user";
         String password = "password";
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = hl.login(user,password);
         Assert.assertEquals(expected, actual);
     }
